@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+header {
+  background: #4B0082; /* morado estilo FedEx */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+/* Menú */
+nav ul.menu {
+  list-style: none;
+  display: flex;
+}
+
+nav ul.menu > li {
+  position: relative;
+}
+
+nav ul.menu > li > a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  transition: background 0.3s;
+}
+
+nav ul.menu > li > a:hover {
+  background: #FF6600; /* naranja estilo FedEx */
+  border-radius: 5px;
+}
+
+/* Submenú */
+nav ul.submenu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  display: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+nav ul.submenu li a {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul.submenu li a:hover {
+  background: #f0f0f0;
+}
+
+/* Mostrar submenú al pasar */
+nav ul.menu li:hover ul.submenu {
+  display: block;
+}
+
+/* Contenido principal */
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+main h2 {
+  color: #4B0082;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
